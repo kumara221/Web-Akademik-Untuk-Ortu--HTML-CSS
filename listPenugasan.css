@@ -1,0 +1,483 @@
+*, html, body {
+    margin: 0vw;
+    padding: 0vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.fcontainer {
+    display: flex;
+    width: 10ovw;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #793FDF;
+    box-shadow: 7px -1px 30px -4px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 7px -1px 30px -4px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 7px -1px 30px -4px rgba(0, 0, 0, 0.78);
+    padding: 0px; /* Add padding to the navbar */
+    margin: 0 auto; /* Center the navbar */
+    padding-top: 1;
+}
+
+.logo.font {
+    color: rgb(32, 31, 31);
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    direction: row;
+    list-style: none;
+    color: black;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 9px;
+}
+
+.navigation li {
+    padding-right: 15px;
+    position: relative;
+}
+
+.logo img {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.imgringtone img {
+    width: 25px;
+    height: 25px;
+}
+
+.imgprofile img {
+    width: 25px;
+    height: 25px;
+}
+
+ul li {
+    position: relative;
+}
+
+.dropdown {
+    width: 100%;
+    background-color: #7091F5;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    top: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 0px;
+}
+
+.dropdown li {
+    display: flex;
+    padding: 10px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 250px;
+}
+
+.image1 img {
+    width: 150%; 
+    max-width: 700px; 
+    height: auto; 
+    display: block; 
+}
+
+.styling{
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    font-family: KoPub Batang;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.2; 
+    list-style-type: none;
+    padding-left: 250px;
+    position: relative;
+}
+
+.styling1{
+    line-height: 2;
+    font-weight: bold;
+}
+
+.container{
+    position: relative;
+    width: 10ovw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 75%;
+    
+}
+
+  .title-text{
+    top: 55px;
+    left: 100px;
+    color: #252d3a;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Ubisoft Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    width: 1030px;
+  }
+
+  .pemisah{
+    width: 100%;
+    height: 1px;
+    display: block;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.12);
+    background-color: #fff;
+    margin-top: 10px;
+  }
+
+  .task {
+    top: 120px;
+    left: 100px;
+    width: 1030px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 50px;
+    flex-shrink: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+
+  .accordion{
+    margin: 25px auto;
+    width: 975px;
+  }
+
+  .accordion li{
+    list-style: none;
+    margin: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    background: rgba(233,233,242,255);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+  }
+
+  .accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Ubisoft Sans;
+    color: #252d3a;;
+  }
+
+  label::before{
+    content: url(icon/tutup.png);
+    margin-right: 10px;
+    font-size: 35px;
+  }
+
+  input[type="radio"]{
+    display: none;
+  }
+
+  .accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    font-family: Ubisoft Sans;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+  }
+  
+  .accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+  }
+
+  .accordion input[type="radio"]:checked + label::before{
+    content: url(icon/buka.png);
+  }
+
+  .minimize{
+    cursor: pointer;
+    position: absolute;
+    right: -35px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #000000;
+    width: max-content;
+    width: 35px;
+    height: 33px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: rgba(255,184,0,255);
+  }
+  
+  .sidebar.small{
+    width: 80px;
+  }
+  
+  .sidebar.small .btn-halaman-utama{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-halaman-utama .halaman-utama{
+    display: none;
+  }
+  
+  .sidebar.small .btn-profil{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-profil .profil{
+    display: none;
+  }
+  
+  .sidebar.small .btn-pemberitahuan{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-pemberitahuan .pemberitahuan{
+    display: none;
+  }
+  
+  .sidebar.small .btn-presensi{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-presensi .presensi{
+    display: none;
+  }
+  
+  .sidebar.small .btn-jadwal-kuliah{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-jadwal-kuliah .jadwal-kuliah{
+    display: none;
+  }
+  
+  .sidebar.small .btn-tugas{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-tugas .tugas{
+    display: none;
+  }
+  
+  .sidebar.small .btn-konsultasi{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-konsultasi .konsultasi{
+    display: none;
+  }
+  
+  .sidebar.small .btn-rhs{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-rhs .rhs{
+    display: none;
+  }
+  
+  .sidebar.small .btn-biaya-kuliah{
+    display: flex;
+    flex-direction: column;
+    left:-15px;
+    width: 115px;
+  }
+  .sidebar.small .btn-biaya-kuliah .biaya-kuliah{
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      left: 115px;
+      width: 350px;
+      transition: 0.3s;
+    }
+  
+    .title-text {
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .task {
+      top: 125px;
+      left: 0;
+      width: 100%;
+      font-size: 70%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      left: 150px;
+      width: 730px;
+      transition: 0.3s;
+    }
+  
+    .title-text {
+      left: 0;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .task {
+      top: 125px;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1025px){
+    .container{
+      transition: 0.3s;
+    }
+  }
+
+.footer {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50vh;
+    background-color: #3F3F3F;
+    justify-content: space-between;
+}
+.logo-ub {
+    display: grid;
+    place-items: center;
+
+}
+
+.logo-ub img {
+    width: 60%;
+    padding: 5%;
+}
+
+.logo-ub ul {
+    list-style: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.penjelasan-edutrack{
+    padding-top: 0%;
+    line-height: 30px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    ine-height: normal;
+}
+
+.copyright {
+    display: flex;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #292626;
+    color: #ffffff;
+    text-align: center; 
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.copyright img {
+    width: 2%;
+    padding: 4px;
+}
+.copyright ul {
+    list-style-type: none;
+}
+
+.fixed-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #793FDF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fixed-icon:hover {
+    background-color: #000000;
+}
+
+.fixed-icon img{
+    width: 50px;
+    height: 50px;
+}

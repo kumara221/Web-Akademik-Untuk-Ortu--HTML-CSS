@@ -1,0 +1,393 @@
+*, html, body {
+    margin: 0vw;
+    padding: 0vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.fcontainer {
+    display: flex;
+    width: 10ovw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #793FDF;
+    box-shadow: 7px -1px 30px -4px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 7px -1px 30px -4px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 7px -1px 30px -4px rgba(0, 0, 0, 0.78);
+    padding: 0px; /* Add padding to the navbar */
+    margin: 0 auto; /* Center the navbar */
+    padding-top: 1;
+}
+
+.logo.font {
+    color: rgb(32, 31, 31);
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    direction: row;
+    list-style: none;
+    color: black;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 9px;
+}
+
+.navigation li {
+    padding-right: 15px;
+    position: relative;
+}
+
+.logo img {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.imgringtone img {
+    width: 25px;
+    height: 25px;
+}
+
+.imgprofile img {
+    width: 25px;
+    height: 25px;
+}
+
+ul li {
+    position: relative;
+}
+
+.dropdown {
+    width: 100%;
+    background-color: #7091F5;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    top: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 0px;
+}
+
+.dropdown li {
+    display: flex;
+    padding: 10px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 250px;
+}
+
+.image1 img {
+    width: 150%; 
+    max-width: 700px; 
+    height: auto; 
+    display: block; 
+}
+
+.styling{
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    font-family: KoPub Batang;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.2; 
+    list-style-type: none;
+    padding-left: 250px;
+    position: relative;
+}
+
+.styling1{
+    line-height: 2;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-content :center;
+    align-items: center;
+    text-align: center;
+    height: 370px;
+    background-color: #793FDF;
+}
+
+.kotak-kiri{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.box1{
+    background: linear-gradient(110deg, #FFF 48.48%, rgba(255, 255, 255, 0.00) 178.3%);
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.24);
+}
+
+.box1 ul h1{
+    padding-left: 3% ;
+    color: #793FDF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.20);
+    font-family: KoPub Batang;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%; /* 30px */
+    letter-spacing: -0.6px;
+    list-style: none;
+}
+
+.box1 ul li{
+    color: #000;
+    padding: 3%;
+    padding-top: 2% ;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 23px;
+    list-style: none;
+    text-align: justify;
+    text-transform: lowercase;
+}
+
+.box2{
+    background: linear-gradient(110deg, #FFF 48.48%, rgba(255, 255, 255, 0.00) 178.3%);
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.24);
+}
+
+.box2 ul h1{
+    padding-left: 3% ;
+    color: #793FDF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.20);
+    font-family: KoPub Batang;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%; /* 30px */
+    letter-spacing: -0.6px;
+    list-style: none;
+}
+
+.box2 ul li{
+    color: #000;
+    padding: 3%;
+    padding-top: 2% ;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 23px;
+    list-style: none;
+    text-align: justify;
+
+}
+.kotak-kanan{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 30px;
+}
+
+.box3{
+    background: linear-gradient(110deg, #FFF 48.48%, rgba(255, 255, 255, 0.00) 178.3%);
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.24);
+}
+
+.box3 ul h1{
+    padding-left: 3% ;
+    color: #793FDF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.20);
+    font-family: KoPub Batang;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%; /* 30px */
+    letter-spacing: -0.6px;
+    list-style: none;
+}
+
+.box3 ul li{
+    color: #000;
+    padding: 3%;
+    padding-top: 2% ;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 23px;
+    list-style: none;
+    text-align: justify;
+}
+
+.box4{
+    background: linear-gradient(110deg, #FFF 48.48%, rgba(255, 255, 255, 0.00) 178.3%);
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.24);
+}
+
+.box4 ul h1{
+    padding-left: 3% ;
+    color: #793FDF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.20);
+    font-family: KoPub Batang;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%; /* 30px */
+    letter-spacing: -0.6px;
+    list-style: none;
+}
+
+.box4 ul li{
+    color: #000;
+    padding: 3%;
+    padding-top: 2% ;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 23px;
+    list-style: none;
+    text-align: justify;
+}
+
+.footer {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50vh;
+    background-color: #3F3F3F;
+    justify-content: space-between;
+}
+.logo-ub {
+    display: grid;
+    place-items: center;
+
+}
+
+.logo-ub img {
+    width: 60%;
+    padding: 5%;
+}
+
+.logo-ub ul {
+    list-style: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.penjelasan-edutrack{
+    padding-top: 0%;
+    line-height: 30px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    ine-height: normal;
+}
+
+.copyright {
+    display: flex;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #292626;
+    color: #ffffff;
+    text-align: center; 
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.copyright img {
+    width: 2%;
+    padding: 4px;
+}
+.copyright ul {
+    list-style-type: none;
+}
+
+.fixed-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #793FDF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fixed-icon:hover {
+    background-color: #000000;
+}
+
+.fixed-icon img{
+    width: 50px;
+    height: 50px;
+}
